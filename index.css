@@ -1,0 +1,180 @@
+body{
+    background-image: url("background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin:0;
+    padding:0;
+    height:fit-content;
+
+    overflow-x: hidden;
+}
+
+header{
+    background-color: white;
+    height:15vh;
+    width:100%;
+    display: grid;
+
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+#heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#heading > h1{
+    color: #fba9c9;
+    font-family: 'Leckerli One', cursive;
+    font-size: 50px;
+}
+
+#christmas-sloth-1{
+    background-image: url("3.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height:10vh;
+}
+
+#christmas-sloth-2{
+    background-image: url("4.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height:15vh;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    flex-direction: column;
+    width:100%;
+    height:fit-content;
+    justify-content: center;
+    align-items: center;
+    padding-top:50px;
+    margin: 70px;
+}
+
+.content-card{
+    background-color: whitesmoke;
+    border-radius: 10px;
+    height:65vh;
+    width:65%;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:50px;
+}
+
+#product-image1{
+    background-image: url("ninjaCreami4.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height:25vh;
+    width:60%;
+    border-radius: 10px;
+}
+
+#product-image2{
+    background-image: url("annepro2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height:25vh;
+    width:60%;
+    border: 2px;
+    border-radius: 10px;
+}
+
+#product-image3{
+    background-image: url("powder4.webp");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height:25vh;
+    width:60%;
+    border-radius: 10px;
+}
+
+.product-name{
+    margin-top:20px;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.product-visit > button{
+    border: none;
+    margin-top:20px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-visit > button:hover{
+    color: #fba9c9;
+    animation: jump 0.5s ease-in-out;
+}
+
+@keyframes jump {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+.product-desc{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    margin:10px;
+}
+
+#countdown{
+    width:75%;
+    background-image: url("christmasbackground2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding:30px;
+}
+
+#countdown-area{
+    background-color: white;
+    width:100%;
+    height:100%;
+    display: flex;
+    
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 45px;
+    font-family: 'Leckerli One', cursive;
+}
+
+#days{
+    font-size: 60px;
+}
